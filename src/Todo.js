@@ -14,7 +14,9 @@ class Todo extends Component {
       id: 1 + Math.random(),
       item: "",
     };
+    console.log(this.state.items);
   }
+  
   handleChange = (e) => {
     this.setState({
       item: e.target.value,

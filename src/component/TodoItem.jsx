@@ -5,7 +5,6 @@ const undo = "#ffffff";
 const doneF = "#77A275";
 const undoF = "#000000";
 
-
 export default class TodoItem extends Component {
   constructor(props) {
     super(props);
@@ -19,7 +18,7 @@ export default class TodoItem extends Component {
   handleDone() {
     const bgDone = this.state.bgColor == undo ? done : undo;
     const fontDone = this.state.fontColor == undoF ? doneF : undoF;
-    this.setState({ bgColor: bgDone,fontColor: fontDone });
+    this.setState({ bgColor: bgDone, fontColor: fontDone });
     // this.setState({ fontColor: fontDone });
   }
 
